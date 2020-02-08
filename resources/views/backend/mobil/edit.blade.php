@@ -58,8 +58,7 @@
                                                 <label>Nama Tipe</label>
                                                 <select class="form-control" id="formGroupDefaultSelect" name="mobil_type_id">
                                                     @foreach($type AS $mt)
-                                                        @if
-                                                        <option value="{{$mt->type_id->type_brand_id}}">{{$mt->type_name}}</option>
+                                                        <option value="{{$mt->type_id}}">{{$mt->type_name}}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
