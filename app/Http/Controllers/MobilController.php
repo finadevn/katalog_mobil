@@ -40,6 +40,8 @@ class MobilController extends Controller
     public function edit($id){
 
         $data['mobil'] = DB::table('mobil')->where('mobil_id', $id)->first();
+        $data['brand'] = DB::table('brand')->get();
+        $data['type'] = DB::table('type')->get();
 
         return view('backend.mobil.edit', $data);
     }
